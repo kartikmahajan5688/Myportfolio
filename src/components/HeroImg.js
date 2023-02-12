@@ -1,7 +1,7 @@
 import "./HeroImgStyles.css";
 import React from "react";
-import pdf from "../assets/Kartik's Resume.pdf";
-import {NavLink} from "react-router-dom";
+// import pdf from "../assets/Kartik's Resume.pdf";
+// import {NavLink} from "react-router-dom";
 
 import IntroImg from "../assets/intro-bg.jpg";
 import { Link } from "react-router-dom";
@@ -18,20 +18,20 @@ const HeroImg = () => {
       </div>
       <div className="content">
         <p>WELCOME IN MY PORTFOLIO</p>
-        <h1>I'M A React Developer</h1>
+        <h1>I'm a React Developer</h1>
         <div>
           <Link to="/projects"
       className="btn">PROJECTS</Link>
-          <Link to="/contact"
-      className="btn btn-light">CONTACT</Link>
+          <Link to="/about"
+      className="btn btn-light">Hire Me</Link>
           {/* <button className="btn">
             <a href={pdf}>Resume</a>
           </button> */}
-          <NavLink 
+          {/* <NavLink 
             to={pdf} 
             className="btn">
               Resume
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </div>
