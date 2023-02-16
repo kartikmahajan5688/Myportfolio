@@ -1,9 +1,5 @@
 import "./HeroImgStyles.css";
 import React from "react";
-// import pdf from "../assets/Kartik's Resume.pdf";
-// import {NavLink} from "react-router-dom";
-
-import IntroImg from "../assets/intro-bg.jpg";
 import { Link } from "react-router-dom";
 
 const HeroImg = () => {
@@ -12,26 +8,18 @@ const HeroImg = () => {
       <div className="mask">
         <img 
           className= "intro-img" 
-          src={IntroImg} 
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" 
           alt="IntroImg" 
         />
       </div>
       <div className="content">
-        <p>WELCOME IN MY PORTFOLIO</p>
-        <h1>I'm a React Developer</h1>
-        <div>
+        <p className="animate__animated animate__bounce">WELCOME IN MY PORTFOLIO</p>
+        <h1 className="animate__animated animate__slideInLeft">I'm a React Developer</h1>
+        <div className ="hero-btns">
           <Link to="/projects"
       className="btn">PROJECTS</Link>
           <Link to="/about"
       className="btn btn-light">Hire Me</Link>
-          {/* <button className="btn">
-            <a href={pdf}>Resume</a>
-          </button> */}
-          {/* <NavLink 
-            to={pdf} 
-            className="btn">
-              Resume
-          </NavLink> */}
         </div>
       </div>
     </div>

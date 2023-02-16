@@ -28,11 +28,17 @@ ul {
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
-  background: rgb(248, 217, 15);
-  color: #222;
+  background: rgb(0, 75, 119);
+  color: #ffffff;
   border: 1px solid #fff;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 10px;
+  transition: transform .2s; 
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .btn-light {

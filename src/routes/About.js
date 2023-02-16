@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const About = () => {
   return <div>
       <Navbar/>
-      <HeroImg2 heading="ABOUT" text="I am friendly Front-End Developer" />
+      <HeroImg2 heading="ABOUT" text="I'm a Front-End Developer" />
       <AboutContent />
       <Footer/>
   </div>;
