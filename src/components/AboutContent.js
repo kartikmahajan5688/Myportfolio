@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutContentStyles.css";
-import {Link} from "react-router-dom";
 import pdf from "../assets/Kartik's Resume.pdf";
 import React1 from "../assets/me.png";
 
@@ -11,9 +10,9 @@ const AboutContent = () => {
       <div className="left">
         <h1>Who Am I?</h1>
         <p>I'm a React FrontEnd Developer. I create responsive secure websites with HTML, CSS, BOOTSTRAP and JS. I'm a React FrontEnd Developer. I create responsive secure websites with HTML, CSS, BOOTSTRAP and JS</p>
-        <Link to={pdf}>
-          <button className="btn">RESUME</button>
-        </Link>
+        <div>
+          <a href={pdf} className="btn">RESUME</a>
+        </div>
       </div>
       <div className="right">
             <img src={React1} 
