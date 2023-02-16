@@ -8,10 +8,25 @@ const AboutContent = () => {
   return(
     <div className="about">
       <div className="left">
-        <h1>Who Am I?</h1>
-        <p>I'm a React FrontEnd Developer. I create responsive secure websites with HTML, CSS, BOOTSTRAP and JS. I'm a React FrontEnd Developer. I create responsive secure websites with HTML, CSS, BOOTSTRAP and JS</p>
         <div>
-          <a href={pdf} className="btn">RESUME</a>
+          <h1>Who Am I?</h1>
+          <p>I am Kartik Mahajan. A React developer who responsible for the design and implementation of user interfaces and UI components using React, a front-end JavaScript library.</p>
+          
+        </div>
+        <div className="skills">
+          <p>My Key Skills Are : </p>
+          <ul className="skills_list btn btn-light">
+            <li>HTML </li>
+            <li>CSS </li>
+            <li>JAVASCRIPT + ES6 </li>
+            <li>REACT JS </li>
+            <li> GIT  & GITHUB </li>
+            <li>NODE + NPM </li>
+            <li>REDUX </li>
+          </ul>
+        </div>
+        <div>
+          <a href={pdf} className="btn resume">RESUME</a>
         </div>
       </div>
       <div className="right">

@@ -6,14 +6,28 @@
     justify-content: center;
 }
 
-.about .left {
+.left {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 2rem;
 }
 
 .about .left p {
     margin: 1.2rem 0;
+}
+
+.skills {
+    margin: 2rem 0;
+}
+
+.skills_list {
+    display: flex;
+}
+
+.skills_list li {
+    padding: 0 0.8rem;
 }
 
 .about .right {

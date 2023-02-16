@@ -37,8 +37,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h4>About the company</h4>
-          <p>This is me Kartik Mahajan. I am from a technical background and right now looking for a good career opportunity to start.</p>
+          <h4>About Me</h4>
+          <p>I am Kartik Mahajan. A React developer who responsible for the design and implementation of user interfaces and UI components using React, a front-end JavaScript library.</p>
           <div className="social">
             <a href="https://github.com/kartikmahajan5688">
               <FaGithub
