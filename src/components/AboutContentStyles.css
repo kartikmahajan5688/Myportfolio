@@ -4,6 +4,7 @@
     margin: 3rem 3rem;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .about .left {
@@ -18,21 +19,24 @@
     margin: 1.2rem 0;
 }
 
-.skills {
+.left .skills {
     margin: 2rem 0;
 }
 
-.skills_list {
-    display: flex;
+.left .skills .skills_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
 }
 
-.skills_list li {
+.left .skills .skills_list li {
     padding: 0 0.8rem;
 }
 
 .about .right {
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .right .img {
@@ -43,4 +47,5 @@
     .about {
         grid-template-columns: 1fr;
     }
+
 }
