@@ -10,7 +10,7 @@
 git clone https://github.com/kartikmahajan5688/Myportfolio.git
 
 # navigate to repo
-cd react my-portfolio
+cd Myportfolio
 
 # install deps
 npm install
