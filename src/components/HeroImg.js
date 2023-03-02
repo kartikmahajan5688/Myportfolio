@@ -14,7 +14,7 @@ const HeroImg = () => {
       </div>
       <div className="content">
         <p className="animate__animated animate__bounce">WELCOME IN MY PORTFOLIO</p>
-        <h1 className="animate__animated animate__slideInLeft">I'm a React Developer</h1>
+        <h1 className="animate__animated animate__slideInLeft">I'm a FrontEnd Developer</h1>
         <div className ="hero-btns">
           <Link to="/projects"
       className="btn">PROJECTS</Link>
