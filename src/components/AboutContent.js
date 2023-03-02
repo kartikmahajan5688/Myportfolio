@@ -10,7 +10,7 @@ const AboutContent = () => {
       <div className="left">
         <div>
           <h1>Who Am I?</h1>
-          <p>I am Kartik Mahajan. A React developer who responsible for the design and implementation of user interfaces and UI components using React, a front-end JavaScript library.</p>
+          <p>I am Kartik Mahajan. A FrontEnd developer who responsible for the design and implementation of user interfaces and UI components using React, a front-end JavaScript library.</p>
           
         </div>
         <div className="skills">
