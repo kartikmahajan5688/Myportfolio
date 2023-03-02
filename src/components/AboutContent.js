@@ -26,7 +26,7 @@ const AboutContent = () => {
           </ul>
         </div>
         <div>
-          <a href={pdf} className="btn resume">RESUME</a>
+          <a href={pdf} className="btn resume" target="_blank" rel="noopener noreferrer">RESUME</a>
         </div>
       </div>
       <div className="right">
