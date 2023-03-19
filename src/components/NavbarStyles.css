@@ -9,6 +9,10 @@
     z-index: 10;
 }
 
+#logo {
+    font-size: 2rem;
+}
+
 .header-bg {
     background-color: rgba(0,0,0,0.85);
     transition: 0.5s;
@@ -37,6 +41,11 @@
 }
 
 @media screen and (max-width: 1040px) {
+
+    #logo {
+        font-size: 1.2rem;
+    }
+
     .nav-menu {
         flex-direction: column;
         justify-content: center;
