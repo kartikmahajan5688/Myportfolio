@@ -1,18 +1,4 @@
 const ProjectCardData = [
-    // {
-    //     imgsrc: "https://thumbs.dreamstime.com/b/young-woman-picked-out-face-detection-facial-recognition-software-several-other-faces-detected-crowd-people-background-136967238.jpg",
-    //     title: "Smart Brain",
-    //     text: "This project helps you in detecting face and you can see the data fetching from an api and enjoys a React FrontEnd with some amazing css animations.",
-    //     view: "https://responsivnavbar.netlify.app/#",
-    //     source: "https://github.com/kartikmahajan5688/manoranjan-app",
-    // },
-    // {
-    //     imgsrc: "https://images.unsplash.com/photo-1586769852044-692d6e3703f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    //     title: "Contact Manager",
-    //     text: "An app in which you can manage all your contacts by adding, deleting and editing them by using Crud operations and Axios API. Complete Project based on React and its functionalities",
-    //     view: "url",
-    //     source: "url"
-    // },
     {
         imgsrc: "https://images.unsplash.com/photo-1582571352032-448f7928eca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=992&q=80",
         title: "Random Robos",
@@ -40,6 +26,13 @@ const ProjectCardData = [
         text: "An app where you listen some amazing set of playlist of songs.It gives you feeling of listening you favourite playlist.",
         view: "https://soundtracx.netlify.app/",
         source: "https://github.com/kartikmahajan5688/SoundTrax"
+    },
+    {
+        imgsrc: "https://i.pinimg.com/736x/2c/51/f3/2c51f38e1658e16c178b527260197767.jpg",
+        title: "Social Posts",
+        text: "Fetching the data from an API with the help of Fetch API and show in UI as posts list.",
+        view: "https://socialpost-s.netlify.app",
+        source: "https://github.com/kartikmahajan5688/Social-posts"
     },
 
 ];

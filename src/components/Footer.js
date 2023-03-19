@@ -1,5 +1,5 @@
 import "./FooterStyles.css";
-import {FaHome, FaPhone, FaMailBulk,FaFacebook , FaGithub, FaLinkedin} from "react-icons/fa";
+import {FaHome, FaPhone, FaMailBulk,FaFacebook , FaGithub, FaLinkedin, FaHeart} from "react-icons/fa";
 
 import React from "react";
 
@@ -60,6 +60,14 @@ const Footer = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div id="footer-line">
+        <p>Made with
+           <FaHeart size={20} 
+                  style={{color:"red", margin:"0 0.5rem"}}
+          />
+          by Kartik Mahajan
+        </p>
       </div>
     </div>
   );
