@@ -7,6 +7,13 @@ const ProjectCardData = [
         source: "https://github.com/kartikmahajan5688/random-robos"
     },
     {
+        imgsrc: "https://i.pinimg.com/736x/2c/51/f3/2c51f38e1658e16c178b527260197767.jpg",
+        title: "Firebase CRUD Books App",
+        text: "CRUD Books App with React JS and Firebase. Add New Books, Update The Books and Delete The Books with the help of Firestore.",
+        view: "https://books-crudapp.netlify.app/",
+        source: "https://github.com/kartikmahajan5688/Firebase-CRUD-App"
+    },
+    {
         imgsrc: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
         title: "Magic Notes",
         text: "If you want an app where you can add your everyday tasks, update them, delete them or serach any tasks Magic Notes will help you to do that.",
