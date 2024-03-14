@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutContentStyles.css";
 import pdf from "../assets/Kartik's Resume.pdf";
-import React1 from "../assets/me.png";
 import ReactCertificate from "../assets/React-Certificate.png";
 import React_Certification from "../assets/Udemy-ReactJs-Cerification.pdf";
 import NextJsCertificate from "../assets/NextJS_certificate.png";
@@ -128,7 +127,9 @@ const AboutContent = () => {
           padding: "1rem 0",
         }}
       >
-        <h1 style={{ textAlign: "center", marginTop:"1rem" }}>My Certifications</h1>
+        <h1 style={{ textAlign: "center", marginTop: "1rem" }}>
+          My Certifications
+        </h1>
         <div className="about">
           <div>
             <div>

@@ -1,4 +1,3 @@
-import Ecommerce from "../assets/e2.jpg";
 import NextJSFoodies from "../assets/Nextjs-foodies.png";
 import NextJsAuth from "../assets/Nextjs-auth.png";
 import NextJSBlogs from "../assets/NextJs-Blogs.png";
