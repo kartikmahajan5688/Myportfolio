@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7755be9.css",
+    "main.js": "/static/js/main.7554491c.js",
+    "static/media/Nextjs-foodies.png": "/static/media/Nextjs-foodies.0c5b681b2826e4e652ba.png",
+    "static/media/NextJs-Blogs.png": "/static/media/NextJs-Blogs.ad5cf8e518901497569b.png",
+    "static/media/Udemy-ReactJs-Cerification.pdf": "/static/media/Udemy-ReactJs-Cerification.c8aead7412f41163aa99.pdf",
+    "static/media/Udemy-Complete-Web-Developer-ZTM-Cerifications.pdf": "/static/media/Udemy-Complete-Web-Developer-ZTM-Cerifications.59f6b57d705638455f9a.pdf",
+    "static/media/React-Certificate.png": "/static/media/React-Certificate.22e965f80a9e875c0d46.png",
+    "static/media/me.png": "/static/media/me.59cf59ce45b03c84dcc9.png",
+    "static/media/Web-Developer-Cerificate.png": "/static/media/Web-Developer-Cerificate.7c45004e8cf75a7a7bc8.png",
+    "static/media/NextJs-Udemy-Certification.pdf": "/static/media/NextJs-Udemy-Certification.c6ff7e29a8e9c079b90c.pdf",
+    "static/media/NextJS_certificate.png": "/static/media/NextJS_certificate.47b27e091d886e0b9fac.png",
+    "static/media/Kartik's Resume.pdf": "/static/media/Kartik's Resume.42575cd646b43611c941.pdf",
+    "static/media/mongo_icon.png": "/static/media/mongo_icon.0761bbb7b05531fcc707.png",
+    "static/media/Nextjs-auth.png": "/static/media/Nextjs-auth.885686dde179fab0adf7.png",
+    "static/media/redux.png": "/static/media/redux.f88604500efd29af8ac0.png",
+    "static/media/Typescript-dragdrop.png": "/static/media/Typescript-dragdrop.e4d2bfc8ba396638abef.png",
+    "static/media/sql.png": "/static/media/sql.818b4f14df001e9369c2.png",
+    "index.html": "/index.html",
+    "main.e7755be9.css.map": "/static/css/main.e7755be9.css.map",
+    "main.7554491c.js.map": "/static/js/main.7554491c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7755be9.css",
+    "static/js/main.7554491c.js"
+  ]
+}
