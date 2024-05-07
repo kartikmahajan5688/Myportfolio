@@ -5,12 +5,14 @@ import Project from "../components/Project";
 import Footer from "../components/Footer";
 
 const Projects = () => {
-  return <div>
-    <Navbar/>
-    <HeroImg2 heading="PROJECTS" text="Some of my recent works" />
-    <Project />
-    <Footer/>
-  </div>;
+  return (
+    <div>
+      <Navbar />
+      <HeroImg2 heading="PROJECTS" text="Welcome To My Development World" />
+      <Project />
+      <Footer />
+    </div>
+  );
 };
 
 export default Projects;

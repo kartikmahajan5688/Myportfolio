@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import {
-  LearningProjectsCardData,
+  // LearningProjectsCardData,
   BigProjectsCardData,
 } from "./ProjectCardData";
 import "./ProjectCardStyles.css";
@@ -9,7 +9,7 @@ import "./ProjectCardStyles.css";
 const Project = () => {
   return (
     <div className="work-container">
-      <h1 className="project-heading">Main Projects</h1>
+      <h1 className="project-heading">Projects</h1>
       <div className="project-container">
         {BigProjectsCardData.map((value, index) => {
           return (
@@ -24,7 +24,7 @@ const Project = () => {
           );
         })}
       </div>
-      <h1 className="project-heading">Learning Projects</h1>
+      {/* <h1 className="project-heading">Learning Projects</h1>
       <div className="project-container">
         {LearningProjectsCardData.map((value, index) => {
           return (
@@ -38,7 +38,7 @@ const Project = () => {
             />
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

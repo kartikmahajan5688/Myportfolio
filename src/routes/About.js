@@ -5,12 +5,17 @@ import AboutContent from "../components/AboutContent";
 import Footer from "../components/Footer";
 
 const About = () => {
-  return <div>
-      <Navbar/>
-      <HeroImg2 heading="ABOUT" text="I'm a Front-End Developer" />
+  return (
+    <div>
+      <Navbar />
+      <HeroImg2
+        heading="ABOUT ME"
+        text="Experienced MERN stack developer with 1 year of expertise in JavaScript, React.js, Node.js, and MongoDB. Proficient in building scalable web applications with strong skills in both front-end and back-end development."
+      />
       <AboutContent />
-      <Footer/>
-  </div>;
+      <Footer />
+    </div>
+  );
 };
 
 export default About;

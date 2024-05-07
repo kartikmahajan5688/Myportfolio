@@ -8,7 +8,9 @@ class HeroImg2 extends Component {
       <div className="hero-img">
         <div className="heading">
           <h1>{this.props.heading}</h1>
-          <p>{this.props.text}</p>
+          <p style={{ maxWidth: "70%", fontSize: "16px", marginTop: "15px" }}>
+            {this.props.text}
+          </p>
         </div>
       </div>
     );
