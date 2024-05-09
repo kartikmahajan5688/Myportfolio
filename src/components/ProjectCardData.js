@@ -4,6 +4,14 @@ import NextJSBlogs from "../assets/NextJs-Blogs.png";
 import TypescriptDragDrop from "../assets/Typescript-dragdrop.png";
 
 export const BigProjectsCardData = [
+  {
+    imgsrc: NextJSBlogs,
+    title: "Next JS - Blogs",
+    text: "By using Next JS, I build a blog website in which I use Markdown to write code in my blogs and understand how the NextJS is able to complete the ReactJS framework. In contact page, you can connect with the blogs owner and the data is collected in MongoDB.",
+    view: "https://kartik-nextjs-blogs.vercel.app/",
+    source: "https://github.com/kartikmahajan5688/nextjs-blogs",
+  },
+
   //increase functionality
   {
     imgsrc: TypescriptDragDrop,
@@ -12,15 +20,6 @@ export const BigProjectsCardData = [
     view: "https://typescript-webpack-drag-and-drop.vercel.app/",
     source:
       "https://github.com/kartikmahajan5688/typescript-webpack-drag-and-drop",
-  },
-
-  //form not working for submission, add more blogs, make crud feature for blog posts
-  {
-    imgsrc: NextJSBlogs,
-    title: "Next JS - Blogs",
-    text: "By using Next JS, I build a blog website in which I use Markdown to write code in my blogs and understand how the NextJS is able to complete the ReactJS framework. In contact page, you can connect with the blogs owner and the data is collected in MongoDB.",
-    view: "https://kartik-nextjs-blogs.vercel.app/",
-    source: "https://github.com/kartikmahajan5688/nextjs-blogs",
   },
 
   //responsive, db not working, S3 issues
