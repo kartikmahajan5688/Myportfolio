@@ -30,10 +30,6 @@ LangChain, Amazon Bedrock, and OpenAI, alongside full-stack web engineering.
 
 **🔗 Live:** [kartikmportfolio.netlify.app](https://kartikmportfolio.netlify.app/)
 
-<p align="center">
-  <img src="src/assets/preview.png" alt="Portfolio preview" width="800" />
-</p>
-
 ## ✨ Features
 
 - **Dark, modern UI** — hand-written CSS design system with gradients, glassmorphism, and scroll-reveal animations
