@@ -1,6 +1,27 @@
 import React from "react";
-import { skills } from "../data/portfolio";
+import {
+  FiCpu,
+  FiGitMerge,
+  FiSearch,
+  FiMessageSquare,
+  FiCode,
+  FiCloud,
+  FiDatabase,
+  FiLayers,
+} from "react-icons/fi";
+import { coreSkills, skills } from "../data/portfolio";
 import "./Skills.css";
+
+const iconMap = {
+  genai: FiCpu,
+  agents: FiGitMerge,
+  rag: FiSearch,
+  voice: FiMessageSquare,
+  python: FiCode,
+  cloud: FiCloud,
+  vector: FiDatabase,
+  fullstack: FiLayers,
+};
 
 const Skills = () => {
   return (
@@ -13,6 +34,25 @@ const Skills = () => {
         </p>
       </div>
 
+      <h3 className="skills__label">Core Expertise</h3>
+      <div className="core-skills">
+        {coreSkills.map((s) => {
+          const Icon = iconMap[s.icon] || FiCpu;
+          return (
+            <div className="core-skill card" key={s.label}>
+              <span className="core-skill__icon">
+                <Icon />
+              </span>
+              <div>
+                <h4>{s.label}</h4>
+                <p>{s.detail}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <h3 className="skills__label">Full Toolbox</h3>
       <div className="skills__grid">
         {skills.map((group) => (
           <div className="skills__card card" key={group.category}>

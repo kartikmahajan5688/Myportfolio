@@ -72,6 +72,50 @@ export const stats = [
   { value: "30%", label: "Fewer hallucinations" },
 ];
 
+// Headline skills shown as the "Core Expertise" row (recruiter-facing).
+export const coreSkills = [
+  {
+    icon: "genai",
+    label: "Generative AI & LLMs",
+    detail: "LLM applications, prompt engineering & fine-tuning concepts",
+  },
+  {
+    icon: "agents",
+    label: "Agentic & Multi-Agent AI",
+    detail: "Orchestration with AWS Strands, LangChain, AutoGen & MCP",
+  },
+  {
+    icon: "rag",
+    label: "RAG Pipelines",
+    detail: "Grounded retrieval with vector search & evaluation",
+  },
+  {
+    icon: "voice",
+    label: "Conversational AI",
+    detail: "Real-time, speech-to-speech (Amazon Nova Sonic 2)",
+  },
+  {
+    icon: "python",
+    label: "Python & FastAPI",
+    detail: "Production AI backends & APIs",
+  },
+  {
+    icon: "cloud",
+    label: "AWS & Amazon Bedrock",
+    detail: "Bedrock, Lambda & S3 deployment",
+  },
+  {
+    icon: "vector",
+    label: "Vector Databases",
+    detail: "Pinecone & ChromaDB",
+  },
+  {
+    icon: "fullstack",
+    label: "Full-Stack Delivery",
+    detail: "React/Next.js, Node.js — web, mobile & desktop",
+  },
+];
+
 export const skills = [
   {
     category: "Generative AI & LLMs",
