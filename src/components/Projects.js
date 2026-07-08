@@ -18,20 +18,42 @@ const Projects = () => {
       <div className="projects__ai">
         {aiProjects.map((p) => (
           <article className="ai-card card" key={p.title}>
-            <div className="ai-card__head">
-              <span className="ai-card__icon">
-                <FiZap />
-              </span>
+            <div className="ai-card__media">
+              {p.image ? (
+                <img src={p.image} alt={p.title} />
+              ) : (
+                <div className="ai-card__placeholder">
+                  <FiZap />
+                </div>
+              )}
               <span className="ai-card__metric">{p.metric}</span>
             </div>
-            <h4 className="ai-card__title">{p.title}</h4>
-            <p className="ai-card__blurb">{p.blurb}</p>
-            <div className="ai-card__stack">
-              {p.stack.map((s) => (
-                <span className="chip" key={s}>
-                  {s}
-                </span>
-              ))}
+
+            <div className="ai-card__body">
+              <h4 className="ai-card__title">{p.title}</h4>
+              <p className="ai-card__blurb">{p.blurb}</p>
+              <div className="ai-card__stack">
+                {p.stack.map((s) => (
+                  <span className="chip" key={s}>
+                    {s}
+                  </span>
+                ))}
+              </div>
+
+              {(p.view || p.source) && (
+                <div className="ai-card__links">
+                  {p.view && (
+                    <a href={p.view} target="_blank" rel="noopener noreferrer">
+                      <FiExternalLink /> Live
+                    </a>
+                  )}
+                  {p.source && (
+                    <a href={p.source} target="_blank" rel="noopener noreferrer">
+                      <FiGithub /> Code
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </article>
         ))}

@@ -1,151 +1,196 @@
 .projects__group {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    font-family: var(--font-mono);
-    letter-spacing: 0.02em;
-    margin: 8px 0 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .projects__group::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: var(--border-soft);
-  }
-  
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  margin: 8px 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.projects__group::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-soft);
+}
+
+.projects__ai {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+/* AI card — visual on top */
+.ai-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--accent-grad);
+  opacity: 0;
+  transition: opacity 0.25s;
+  z-index: 2;
+}
+
+.ai-card:hover::before {
+  opacity: 1;
+}
+
+.ai-card__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg-elev);
+  border-bottom: 1px solid var(--border);
+}
+
+.ai-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.ai-card:hover .ai-card__media img {
+  transform: scale(1.05);
+}
+
+.ai-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: var(--accent-grad-soft);
+  color: var(--accent-2);
+  font-size: 2.2rem;
+}
+
+.ai-card__metric {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-3);
+  background: rgba(12, 17, 29, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.ai-card__body {
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ai-card__title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.ai-card__blurb {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.ai-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ai-card__links {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.ai-card__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  transition: color 0.2s;
+}
+
+.ai-card__links a:hover {
+  color: var(--accent-2);
+}
+
+/* Web project cards */
+.projects__web {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.web-card {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.web-card__title {
+  font-size: 1.05rem;
+  font-weight: 650;
+  margin-bottom: 6px;
+}
+
+.web-card__blurb {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.web-card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.web-card__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  transition: color 0.2s;
+}
+
+.web-card__links a:hover {
+  color: var(--accent-2);
+}
+
+@media (max-width: 900px) {
   .projects__ai {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 56px;
+    grid-template-columns: 1fr;
   }
-  
-  .ai-card {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .ai-card::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 3px;
-    background: var(--accent-grad);
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-  
-  .ai-card:hover::before {
-    opacity: 1;
-  }
-  
-  .ai-card__head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
-  }
-  
-  .ai-card__icon {
-    display: grid;
-    place-items: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 11px;
-    background: var(--accent-grad-soft);
-    border: 1px solid var(--border);
-    color: var(--accent-2);
-    font-size: 1.15rem;
-  }
-  
-  .ai-card__metric {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--accent-3);
-    border: 1px solid var(--border);
-    padding: 4px 10px;
-    border-radius: 999px;
-  }
-  
-  .ai-card__title {
-    font-size: 1.12rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 10px;
-  }
-  
-  .ai-card__blurb {
-    color: var(--text-muted);
-    font-size: 0.93rem;
-    flex: 1;
-    margin-bottom: 16px;
-  }
-  
-  .ai-card__stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  
   .projects__web {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    grid-template-columns: 1fr;
   }
-  
-  .web-card {
-    padding: 22px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-  }
-  
-  .web-card__title {
-    font-size: 1.05rem;
-    font-weight: 650;
-    margin-bottom: 6px;
-  }
-  
-  .web-card__blurb {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-  }
-  
-  .web-card__links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-shrink: 0;
-  }
-  
-  .web-card__links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-family: var(--font-mono);
-    transition: color 0.2s;
-  }
-  
-  .web-card__links a:hover {
-    color: var(--accent-2);
-  }
-  
-  @media (max-width: 900px) {
-    .projects__ai {
-      grid-template-columns: 1fr;
-    }
-    .projects__web {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

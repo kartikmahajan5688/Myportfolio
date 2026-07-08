@@ -46,6 +46,11 @@ import certZtm from "../assets/certifications/Udemy/Udemy-Complete-Web-Developer
 import badgePromptEng from "../assets/certifications/Badges/prompt-engineering-foundation-badge.png";
 import badgeContextEng from "../assets/certifications/Badges/context-engineering-foundation-badge.png";
 
+// --- AI project screenshots ---
+import projBlogGenerator from "../assets/projects/multi-agent-blog-generator.png";
+import projMentalHealth from "../assets/projects/mental-health-chatbot.png";
+import projRagChatbot from "../assets/projects/document-rag-chatbot.png";
+
 export const profile = {
   name: "Kartik Mahajan",
   role: "AI Engineer",
@@ -173,6 +178,9 @@ export const experience = [
   },
 ];
 
+// AI projects. To add a screenshot: drop the image in src/assets/projects/,
+// import it at the top of this file, and set it as `image` below.
+// Add live-demo and repo URLs to `view` and `source` to show the buttons.
 export const aiProjects = [
   {
     title: "AI-Powered Multi-Agent Blog Generator",
@@ -180,6 +188,9 @@ export const aiProjects = [
       "Full-stack multi-agent content pipeline (Researcher → Writer → Reviewer) that automates end-to-end blog creation, reducing manual content effort by 80%.",
     stack: ["FastAPI", "LangChain", "OpenAI", "Multi-Agent"],
     metric: "−80% manual effort",
+    image: projBlogGenerator,
+    view: "https://ai-blog-generator-frontend-tau.vercel.app/",
+    source: "https://github.com/kartikmahajan5688/ai-blog-generator-frontend",
   },
   {
     title: "AI Mental Health Assistant",
@@ -187,6 +198,9 @@ export const aiProjects = [
       "Multi-agent conversational AI that analyzes user emotions and generates therapy-based self-care suggestions.",
     stack: ["OpenAI", "Microsoft AutoGen", "Conversational AI"],
     metric: "Multi-agent",
+    image: projMentalHealth,
+    view: "https://autogen-healthcare-agent.onrender.com/",
+    source: "https://github.com/kartikmahajan5688/ai-mental-health-assistant",
   },
   {
     title: "AI Document RAG Chatbot",
@@ -194,7 +208,11 @@ export const aiProjects = [
       "RAG chatbot leveraging vector search to deliver context-aware responses and reduce hallucinations by 30%.",
     stack: ["FastAPI", "Gradio", "LangChain", "Pinecone", "RAG"],
     metric: "−30% hallucinations",
+    image: projRagChatbot,
+    view: "https://ai-rag-document-chatbot.onrender.com/gradio/",
+    source: "https://github.com/kartikmahajan5688/ai-document-rag-chatbot",
   },
+
 ];
 
 export const webProjects = [
