@@ -1,63 +1,249 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* ==========================================================================
+   Kartik Mahajan — Portfolio Design System
+   Dark, modern, professional AI-engineer aesthetic
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --bg: #070a12;
+  --bg-elev: #0c111d;
+  --surface: #10162490;
+  --surface-solid: #101624;
+  --border: #1e2740;
+  --border-soft: #171e33;
+
+  /* Text */
+  --text: #e7ecf5;
+  --text-muted: #9aa6bd;
+  --text-dim: #6b7690;
+
+  /* Accents */
+  --accent: #6366f1; /* indigo */
+  --accent-2: #22d3ee; /* cyan */
+  --accent-3: #a855f7; /* violet */
+  --accent-grad: linear-gradient(135deg, #6366f1 0%, #22d3ee 100%);
+  --accent-grad-soft: linear-gradient(135deg, #6366f133 0%, #22d3ee22 100%);
+
+  /* Effects */
+  --glow: 0 0 40px -8px rgba(99, 102, 241, 0.45);
+  --shadow-card: 0 12px 40px -12px rgba(0, 0, 0, 0.6);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+
+  /* Layout */
+  --maxw: 1120px;
+  --nav-h: 72px;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+}
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
 }
 
-/* body css */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 20px);
+}
+
 body {
-  background: #000;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-span,
-a {
-  color: #fff;
-  text-decoration: none;
+/* Ambient background glow */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(600px 400px at 15% 0%, rgba(99, 102, 241, 0.12), transparent 60%),
+    radial-gradient(700px 500px at 100% 20%, rgba(34, 211, 238, 0.08), transparent 55%),
+    radial-gradient(500px 400px at 50% 100%, rgba(168, 85, 247, 0.08), transparent 60%);
+  pointer-events: none;
+}
 
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 ul {
-  list-style-type: none;
-  
+  list-style: none;
 }
 
-ul li {
-  color: #fff;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.btn {
-  padding: 12px 32px;
-  font-size: 1rem;
+/* ---------- Layout helpers ---------- */
+.section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+.section-head {
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  background: rgb(0, 75, 119);
-  color: #ffffff;
-  border: 1px solid #fff;
+  color: var(--accent-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--accent-2);
+  display: inline-block;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+  line-height: 1.15;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  max-width: 620px;
+  margin-top: 14px;
+  font-size: 1.02rem;
+}
+
+.gradient-text {
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 24px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
-  border-radius: 10px;
-  transition: transform .2s; 
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease,
+    border-color 0.2s ease;
+  white-space: nowrap;
 }
 
-.btn:hover {
-  transform: scale(1.1);
+.btn-primary {
+  background: var(--accent-grad);
+  color: #060912;
+  box-shadow: var(--glow);
 }
 
-.btn-light {
-  /* background: rgba(255, 255, 255, 0.2); */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 50px -6px rgba(99, 102, 241, 0.6);
+}
+
+.btn-ghost {
   background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  background: var(--accent-grad-soft);
+  transform: translateY(-2px);
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-card);
+}
+
+/* ---------- Reveal on scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Chips / tags ---------- */
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: var(--bg-elev);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.chip:hover {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.35);
   color: #fff;
 }
 
-.btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  transition: 0.3s;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 72px 18px;
+  }
 }

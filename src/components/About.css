@@ -1,0 +1,77 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about__lead p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.about__edu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  margin-top: 28px;
+}
+
+.about__edu-icon {
+  font-size: 1.6rem;
+  color: var(--accent-2);
+  flex-shrink: 0;
+}
+
+.about__edu h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.about__edu p {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.about__focus {
+  display: grid;
+  gap: 16px;
+}
+
+.about__focus-card {
+  padding: 22px 24px;
+}
+
+.about__focus-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--accent-grad-soft);
+  border: 1px solid var(--border);
+  color: var(--accent-2);
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.about__focus-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.about__focus-card p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 860px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

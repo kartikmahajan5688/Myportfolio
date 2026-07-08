@@ -1,0 +1,136 @@
+.timeline {
+    position: relative;
+    display: grid;
+    gap: 28px;
+    padding-left: 8px;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 12px;
+    bottom: 12px;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--accent),
+      var(--accent-2),
+      transparent
+    );
+  }
+  
+  .timeline__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .timeline__marker {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    color: var(--accent-2);
+    font-size: 1.2rem;
+    box-shadow: var(--glow);
+  }
+  
+  .timeline__card {
+    padding: 24px 26px;
+  }
+  
+  .timeline__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .timeline__role {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .timeline__company {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 3px;
+  }
+  
+  .timeline__company span {
+    color: var(--text-dim);
+  }
+  
+  .timeline__period {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-2);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  
+  .timeline__project {
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-size: 0.94rem;
+  }
+  
+  .timeline__project strong {
+    color: var(--text);
+  }
+  
+  .timeline__points {
+    margin: 16px 0 18px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .timeline__points li {
+    position: relative;
+    padding-left: 20px;
+    color: var(--text-muted);
+    font-size: 0.96rem;
+  }
+  
+  .timeline__points li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-2);
+  }
+  
+  .timeline__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  @media (max-width: 640px) {
+    .timeline__item {
+      grid-template-columns: 40px 1fr;
+      gap: 14px;
+    }
+    .timeline::before {
+      left: 19px;
+    }
+    .timeline__marker {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+    .timeline__card {
+      padding: 20px;
+    }
+  }
+  
