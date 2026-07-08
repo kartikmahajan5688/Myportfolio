@@ -31,7 +31,7 @@ LangChain, Amazon Bedrock, and OpenAI, alongside full-stack web engineering.
 **🔗 Live:** [kartikmportfolio.netlify.app](https://kartikmportfolio.netlify.app/)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kartikmahajan5688/Myportfolio/main/public/preview.png" alt="Portfolio preview" width="800" />
+  <img src="https://raw.githubusercontent.com/kartikmahajan5688/Myportfolio/main/src/assets/preview.png" alt="Portfolio preview" width="800" />
 </p>
 
 ## ✨ Features
