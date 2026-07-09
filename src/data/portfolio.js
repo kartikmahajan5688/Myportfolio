@@ -161,7 +161,18 @@ export const skills = [
   },
   {
     category: "Web Development",
-    items: ["React.js", "React Native (Expo)", "Redux", "Tailwind CSS", "Material UI"],
+    items: [
+      "React.js",
+      "Next.js",
+      "React Native (Expo)",
+      "Redux",
+      "Tailwind CSS",
+      "Material UI",
+      "Electron JS",
+      "Graph.js",
+      "Webpack",
+      "Gradio",
+    ],
   },
 ];
 
