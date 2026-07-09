@@ -153,7 +153,15 @@ export const skills = [
   },
   {
     category: "Programming & Backend",
-    items: ["Python", "FastAPI", "JavaScript (ES6+)", "Node.js", "Express.js", "MongoDB"],
+    items: [
+      "Python",
+      "FastAPI",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
   },
   {
     category: "Cloud & Deployment",
